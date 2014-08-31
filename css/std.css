@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Mono);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+
+.oswald      { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 2px; }
+.oldstandard { font-family: 'Old Standard TT', georgia, serif; }
+.ptmono      { font-family: 'PT Mono', "Lucida Console", Monaco, monospace; }
+.gentium     { font-family: 'Gentium Basic', georgia, serif; }
+.karla       { font-family: 'Karla', Helvetica, Arial, sans-serif; }
+
+html,
+body {
+  color: rgba(89,88,89,1);
+  text-align: center;
+}
+
+.add-bottom { margin-bottom: 1.5em; }
+
+#backdrop { 
+  background: rgba(145,127,113,1) url('../img/woodgrain-transparent.png') center center no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#cool-border {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  border: 10px solid rgba(222,92,81,1);
+  z-index: 500;
+}
+
+#intro {
+  background: rgba(134,207,172,1);
+  margin: 0;
+  margin-bottom: 75%;
+  padding: 2em 2em 4em 2em;
+  /**/
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.2);
+}
+
+img.placeholder {
+  max-height: 60vh;
+  width: auto;
+  max-width: 100%;
+  margin-top: 1em;
+  opacity: 0.88;
+}
+
+#backdrop .container,
+#contents .container {
+  color: white;
+  padding: 4em 1.5em 4em;
+}
+
+#contents .container {
+  background: rgba(145,127,113,1);
+  border-radius: 25px;
+}
+
+p.btn.teal,
+p.btn.teal:hover {
+  background: rgba(134,207,172,1); 
+  color: rgba(89,88,89,1);
+  cursor: auto;
+  margin: 2em 0;
+  padding: 1em 2em;
+  display: block;
+  white-space: normal;
+}
+
+a.btn.orange,
+a.btn.orange:hover {
+  background: rgba(222,92,81,1);
+  color: white;
+  cursor: auto;
+  margin: .2em 0 ;
+  padding: 1em 2em;
+  display: block;
+  white-space: normal;
+}
+
+a.btn.orange:hover {
+  background: white;
+  color: rgba(222,92,81,1);
+}
+
+a.btn {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.2);
+}
+
+a.btn:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+@media (min-width: 768px) {
+  #backdrop h1 {
+    font-size: 5em;
+  }
+  #backdrop h4,
+  #backdrop .lead.oswald {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  #intro {
+    margin-bottom: 90vh;
+  }
+  img.placeholder {
+    margin-top: 2em;
+    min-height: 300px;
+  }
+
+  #contents .container {
+    padding: 7vh 0 14vh 0;
+  }
+  
+  #backdrop h1 {
+    font-size: 7em;
+  }
+  #backdrop h4,
+  #backdrop .lead.oswald {
+    font-size: 3em;
+  }
+
+  p.btn.teal,
+  p.btn.teal:hover {
+    display: inline-block;
+    white-space: nowrap;
+  }
+}
+
+@media (min-height: 520px) and (min-width: 992px) {
+  #intro {
+    padding: 5em 25%;
+    height: 90vh;
+  }
+  
+  #backdrop h1 {
+    font-size: 9.5em;
+    font-size: 10vw;
+  }
+  
+  #backdrop h4,
+  #backdrop .lead.oswald {
+    font-size: 4em;
+  }
+
+}

@@ -1,0 +1,419 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Mono);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+
+.oswald      { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 2px; }
+.oldstandard { font-family: 'Old Standard TT', georgia, serif; }
+.ptmono      { font-family: 'PT Mono', "Lucida Console", Monaco, monospace; }
+.gentium     { font-family: 'Gentium Basic', georgia, serif; }
+.karla       { font-family: 'Karla', Helvetica, Arial, sans-serif; }
+
+/** # Colors **/
+@pms485-red:     ~'rgba(222,92,81,1)';   /** Red Orange **/
+@pms570-teal:    ~'rgba(134,207,172,1)'; /** Teal **/
+@pms7504-brown:  ~'rgba(145,127,113,1)'; /** Brown  **/
+@pms637-blue:    ~'rgba(86,198,229,1)';  /** Light Blue **/
+@pms423-medgray: ~'rgba(145,147,148,1)';   /** Medium Gray **/
+@pms426-dkgray:  ~'rgba(89,88,89,1)';    /** dark gray **/
+@pms709-pink:    ~'rgba(233,118,136,1)';   /** pink **/
+/** /COLORS **/
+
+/**********************/
+/** # helper classes **/
+/**********************/
+
+.add-top        { margin-top: 1.5em; }
+.add-top-2x     { margin-top: 3em; }
+.add-bottom     { margin-bottom: 1.5em; }
+.add-bottom-2x  { margin-bottom: 3em; }
+
+/** for anything needing to stick to whole page in 1 place **/
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/** everything shares a common dropshadow style **/
+.dropshadow {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.2);
+}
+
+/** any box shares these rounded corner styles **/
+.rnded-corners {
+  border-radius: 12px;
+}
+
+.red {
+  background: @pms485-red;
+}
+.teal {
+  background: @pms570-teal;
+}
+.blue {
+  background: @pms637-blue;
+}
+.gray {
+  background: @pms423-medgray;
+}
+.dkgray {
+  background: @pms426-dkgray;
+}
+.pink {
+  background: @pms709-pink;
+}
+.brown {
+  background: @pms7504-brown;
+}
+
+.gray a,
+.gray a:hover,
+.pms426 { color: @pms426-dkgray; }
+
+.red,.teal,.blue,.gray,.dkgray,.pink,.brown {
+  .rnded-corners;
+  .dropshadow;
+}
+
+/** unround corners on mobile **/
+@media (max-width: 767px) {
+  .red,.teal,.blue,.gray,.dkgray,.pink,.brown {
+    border-radius: 0 !important;
+  }
+}
+
+
+/***********************/
+/** # Layout & Design **/
+/***********************/
+
+/** layout and design for big main elements **/
+html,
+body {
+  color: @pms426-dkgray;
+  text-align: center;
+}
+
+#backdrop {
+  background: @pms7504-brown url('../img/woodgrain-transparent.png') center center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  .fixed;
+}
+
+#cool-border {
+  pointer-events: none;
+  border: 10px solid @pms485-red;
+  border-top: none;
+  z-index: 500;
+  .fixed;
+}
+
+header {
+  background: @pms485-red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 499;
+  .dropshadow;
+}
+
+/**** NAV BAR UP TOP ****/
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+header nav ul > li > a {
+  display: block;
+  padding: 10px 10px;
+  color: white;
+  line-height: 20px;
+  transition:all 300ms ease;
+}
+
+header nav ul > li.title > a {
+  font-family: 'Old Standard TT', georgia, serif;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.75);
+  line-height: 16px;
+}
+
+header nav ul > li.active > a,
+header nav ul > li > a:hover {
+  background: rgba(89,88,89,0.5);
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+}
+header nav ul > li.active.title > a,
+header nav ul > li.title > a:hover {
+  background: transparent;
+  color: rgba(255,255,255,0.75);
+}
+
+/** media queries for nav **/
+@media (min-width: 768px) {
+  header nav ul > li > a {
+  padding: 10px 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  header nav ul > li > a {
+  padding: 10px 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+/**** END NAV BAR ****/
+
+#intro {
+  background: @pms570-teal;
+  margin: 0;
+  margin-bottom: 33%;
+  padding: 2em 2em 4em 2em;
+  position: relative;
+  .dropshadow;
+}
+
+.event {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+img { width: 100%; max-width: 100%; }
+
+.wrapper .container {
+  color: white;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  .gentium;
+}
+
+/** media queries for stuff in layout & design **/
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  #intro {
+    margin-bottom: 20vh;
+  }
+  .wrapper .container {
+    padding: 7vh 0 14vh 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .event:nth-child(1),
+  .event:nth-child(3) {
+    top: 20vh;
+  }
+  .event:nth-child(2) {
+  }
+}
+
+@media (min-height: 520px) and (min-width: 992px) {
+  #intro {
+    padding: 5em 25%;
+    height: 90vh;
+  }
+}
+
+/**************************/
+/** # Typography & Links **/
+/**************************/
+section h2 {
+  font-size: 3em;
+}
+
+a.btn {
+  .dropshadow;
+}
+
+a.btn:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+a.btn.orange,
+a.btn.orange:hover {
+  background: @pms485-red;
+  color: white;
+  cursor: auto;
+  margin: .2em 0 ;
+  padding: 1em 2em;
+  display: block;
+  white-space: normal;
+}
+
+a.btn.orange:hover {
+  background: white;
+  color: @pms485-red;
+}
+
+/** Top HOME Section **/
+#intro h2 {
+  color: white;
+  font-size: 2.75em;
+  text-shadow: 2px 2px 0 @pms570-teal;
+  width: 280px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-left: -140px;
+}
+
+img.placeholder {
+  max-height: 60vh;
+  width: auto;
+  max-width: 100%;
+  margin-top: 1em;
+  opacity: 0.88;
+}
+
+/** media queries for typography & top Home section **/
+@media (min-width: 480px) {
+  #intro h2 {
+    font-size: 3.5em;
+    text-shadow: 3px 3px 0 @pms570-teal;
+    width: 400px;
+    top: 210px;
+    margin-left: -200px;
+  }
+}
+
+@media (min-width: 660px) {
+  #intro h2 {
+    font-size: 5.5em;
+    text-shadow: 4px 4px 0 @pms570-teal;
+    width: 600px;
+    top: 230px;
+    margin-left: -300px;
+  }
+}
+
+@media (min-width: 768px) {
+  section h2 {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 992px) {
+  section h2 {
+    font-size: 6em;
+  }
+  #intro h2 {
+    width: 800px;
+    margin-left: -400px;
+    top: 340px;
+    top: calc(40vh - 3em);
+  }
+  img.placeholder {
+    margin-top: 2em;
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+/***********************/
+/** # Details Section **/
+/***********************/
+#details .saturday h4 {
+  color: white;
+  font-size: 2.75em;
+  text-shadow: 2px 2px 0 @pms570-teal;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -50%;
+  top: 180px;
+  z-index: 99;
+  .oswald;
+}
+#details .saturday h4 span {
+  font-size: 1.5em;
+}
+
+/** media queries for details section **/
+@media (min-width: 768px) {
+  #details .saturday h4 {
+    top: 180px;
+  }
+  #details .saturday h4 span {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  #details .saturday h4 {
+    top: 200px;
+    font-size: 4em;
+    text-shadow: 4px 4px 0 @pms570-teal;
+  }
+}
+
+@media (min-width: 1200px) {
+  #details .saturday h4 {
+    top: 260px;
+  }
+}
+
+
+/*********************************/
+/** # Stay / Get Around Section **/
+/*********************************/
+#stay h4 {
+  font-size: 2em;
+  margin: 1em 0;
+}
+#stay .hotel {
+  padding-bottom: 30px;
+}
+#stay .hotel img {
+  margin: 1em 25%;
+  width: 50%;
+  display: block;
+}
+.transport ul {
+  margin: 0 20px 30px;
+  padding: 11px;
+  list-style: none;
+}
+.transport ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-indent: -11px;
+}
+
+/**********************/
+/** # RSVP & CONTACT **/
+/**********************/
+
