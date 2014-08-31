@@ -6,3 +6,12 @@ $("header nav a").click(function(event){
   $(this).parent().siblings().removeClass('active');
   $(this).parent().addClass('active');
 });
+
+$(window).scroll(function() {
+  var pixels_scrolled = $(window).scrollTop();
+  console.log(pixels_scrolled);
+
+  $('#sled').css('margin-left',-1*pixels_scrolled);
+  $('#sled').css('margin-top',pixels_scrolled*.5);
+
+});
