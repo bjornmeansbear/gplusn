@@ -1,13 +1,18 @@
-
 /**********************/
 /** # helper classes **/
 /**********************/
-
-.add-top        { margin-top: 1.5em; }
-.add-top-2x     { margin-top: 3em; }
-.add-bottom     { margin-bottom: 1.5em; }
-.add-bottom-2x  { margin-bottom: 3em; }
-
+.add-top {
+  margin-top: 1.5em;
+}
+.add-top-2x {
+  margin-top: 3em;
+}
+.add-bottom {
+  margin-bottom: 1.5em;
+}
+.add-bottom-2x {
+  margin-bottom: 3em;
+}
 /** for anything needing to stick to whole page in 1 place **/
 .fixed {
   position: fixed;
@@ -16,48 +21,47 @@
   right: 0;
   bottom: 0;
 }
-
 /** everything shares a common dropshadow style **/
 .dropshadow {
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
-
 /** any box shares these rounded corner styles **/
 .rnded-corners {
   border-radius: 12px;
 }
-
 /***********************/
 /** # Layout & Design **/
 /***********************/
-
 /** layout and design for big main elements **/
 html,
 body {
   color: black;
   text-align: center;
 }
-
 #cool-border {
   pointer-events: none;
   border: 15px solid black;
   z-index: 500;
-  .fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
-
 body {
-  background: white url(/img/winterbg.png) center top no-repeat;
+  background: #ffffff url(/img/winterbg.png) center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding-bottom: 25vh;
 }
-
-header { margin-top: 25vh; margin-bottom: 100vh;}
-
+header {
+  margin-top: 25vh;
+  margin-bottom: 100vh;
+}
 #sled {
   height: 100px;
   width: 200px;
