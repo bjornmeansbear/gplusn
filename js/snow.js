@@ -18,7 +18,7 @@ function __ShowSnow(settings)
     var i;
 
     var doc_width = $(window).width() - 10;
-    var doc_height = $(window).height();
+    var doc_height = $(window).height() + 20;
 
     dx = [];
     xp = [];
@@ -95,7 +95,7 @@ function __ShowSnow(settings)
 
     var settings = $.extend({
             SnowImage:      undefined,
-            Quantity:       9,
+            Quantity:       15,
             HideSnowTime:   0
         }, options);
 
