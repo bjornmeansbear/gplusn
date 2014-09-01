@@ -85,3 +85,6 @@ header {
   top: -250px;
   left: 100%;
 }
+main h2 {
+  font-size: 3.33em;
+}
