@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700);
+
+.vollkorn { font-family: 'Vollkorn', 'Times New Roman', Times, serif; }
+
+/**********************/
+/** # helper classes **/
+/**********************/
+
+.add-top        { margin-top: 1.5em; }
+.add-top-2x     { margin-top: 3em; }
+.add-bottom     { margin-bottom: 1.5em; }
+.add-bottom-2x  { margin-bottom: 3em; }
+
+/** for anything needing to stick to whole page in 1 place **/
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/** everything shares a common dropshadow style **/
+.dropshadow {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.2);
+}
+
+/** any box shares these rounded corner styles **/
+.rnded-corners {
+  border-radius: 12px;
+}
+
+/***********************/
+/** # Layout & Design **/
+/***********************/
+
+/** layout and design for big main elements **/
+html,
+body {
+  color: black;
+  text-align: center;
+  .vollkorn;
+}
+
+#cool-border {
+  pointer-events: none;
+  border: 15px solid black;
+  z-index: 10;
+  .fixed;
+}
+
+body {
+  background: white url(/img/winterbg.png) center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 120px;
+}
+
+/* Header / Navbar */
+/***********************/
+header nav {
+  background: black;
+  color: white;
+  text-align: center;
+  .dropshadow;
+}
+
+header nav .navbar-nav {
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+
+header nav .navbar-nav li {
+  display: inline-block;
+  float: none;
+}
+
+header a {
+  color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header a:hover {
+  color: black;
+}
+
+/***********************/
+/***********************/
+/***********************/
+/***********************/
+/***********************/
+/***********************/
+main section {
+  margin: 50px 0;
+}
+
+main section .card {
+  background: rgba(255,255,255,.95);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  /**/
+  padding-top: 40px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+}
+

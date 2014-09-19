@@ -8,7 +8,7 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/gplusn.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,52 +21,76 @@
   <body id="home" data-spy="scroll" data-target=".navbar-example">
     <!-- this just hangs out to fill the screen wrap the viewport with a cool border -->
     <div id="cool-border" class="hidden-xs"></div>
+    <div id="sleds" class="hidden-xs"></div>
 
+
+
+
+    <!-- ***********************-->
+    <!-- ***********************-->
+    <!-- HEADER -->
+    <!-- ***********************-->
+    <!-- ***********************-->
     <header>
-      <nav class="container">
-        <ul class="oswald header-nav">
-          <li class="title hidden-xs hidden-sm"><a href="#home">Nancy + Kristian are getting married!</a></li>
-          <li class="hidden-md hidden-lg"><a href="#home"><i class="fa fa-university"></i></a></li>
-          <li><a href="#details">Details</a></li>
-          <li><a href="#stay">Stay</a></li>
-          <li class="hidden-xs"><a href="#rsvp">RSVP</a></li>
-          <li class="hidden-sm hidden-md hidden-lg"><a href="#rsvp"><i class="fa fa-pencil"></i></a></li>
-          <li class="hidden-xs"><a href="#contact">Contact</a></li>
-          <li  class="hidden-sm hidden-md hidden-lg"><a href="#contact"><i class="fa fa-fax"></i></a></li>
-          <li class="hidden-xs"><a href="#registry">Registry</a></li>
-          <li  class="hidden-sm hidden-md hidden-lg"><a href="#registry"><i class="fa fa-gift"></i></a></li>
-<!--           <li class="title hidden-xs hidden-sm hidden-md"><a>October 11<sup>th</sup>, 2014 &mdash; Baltimore MD</a></li> -->
-        </ul>
+      <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a class="names" href="#home">Gina &amp; Nick</a></li>
+              <li><a href="#details">Details</a></li>
+              <li><a href="#stay">Stay</a></li>
+              <li><a href="#travel">Travel</a></li>
+              <li><a href="#rsvp">RSVP</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#registry">Registry</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <div class="wrapper">
+
+
+
+
+
+
+
+    <!-- ***********************-->
+    <!-- ***********************-->
+    <!-- Main Chunks -->
+    <!-- ***********************-->
+    <!-- ***********************-->
+    <main class="wrapper">
       <!-- this will be the "cover" of the card, it'll slide up out of the way -->
-      <main id="intro">
-        <h1 class="oldstandard">Gina + Nicks&rsquo;s</h1>
+      <section id="intro">
+        <h1 class="oldstandard">Gina + Nick&rsquo;s</h1>
         <h2 class="oswald">Winter Wedding Weekend</h2>
         <h3 class="oldstandard add-top">December 13<sup>th</sup> 2014</h3>
-      </main>
+      </section>
 
       <section id="details">
         <div class="container">
-          <h2>Details</h2>
-          <h4 class="oswald">Nancy + Kristian invite you to their wedding weekend extravaganza</h4>
-          <h1 class="oldstandard add-bottom">October 10<sup>th</sup> &ndash; 12<sup>th</sup>, 2014</h1>
           <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3 red event friday">
-              <p class="lead">Friday!</p>
-              <h3 class="oswald">October, 10</h3>
-              <img src="img/taco-idea1.jpg" class="img-circle"/>
-              <p class="add-top lead">Tacos + Beer</p>
-              <p>Location: TBD</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 teal event saturday">
-              <p class="lead">Saturday!</p>
-              <h3 class="oswald">October, 11</h3>
+
+            <div class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+
+              <h2>Details</h2>
+              <h4>Gina + Nick invite you to a Brew City Wedding</h4>
+              <h1>December 13<sup>th</sup>, 2014</h1>
+
               <p>The Main Event!</p>
-  <!--             <img src="img/starbright-temp1.jpg" class="img-circle"/> -->
-              <img class="add-top" src="img/barn-lines-brown.png"/>
               <h4>@ Star Bright Farm <br/> <span>4pm</span></h4>
               <p class="add-top lead">Wedding Vows, Delicious food, beer, wine, &amp; signature cocktails, music by Caleb Stine, and a generally good time to be had by all.</p>
               <p><span class="small-caps">Location</span>: <a href="http://www.starbright-farm.com/">Star Bright Farm</a></p>
@@ -74,131 +98,153 @@
                 2950 Garrett Road<br/>
                 White Hall, MD 21161
               </address>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0 pink event sunday">
-              <p class="lead">Sunday!</p>
-              <h3 class="oswald">October, 12</h3>
-              <img src="img/brunch1.jpg" class="img-circle"/>
-              <p class="add-top lead">Egg-Bake Brunch</p>
-              <p><span class="small-caps">Location</span>: Nancy + Kristian&rsquo;s House</p>
-              <address>
-                735 Bay Street<br/>
-                Baltimore MD 21211
-              </address>
+
             </div>
           </div>
-
         </div>
       </section><!--/details-->
 
       <section id="stay">
         <div class="container">
-          <h2>Stay</h2>
-
           <div class="row">
-            <div class="col-xs-12 col-md-6 blue hotel">
-              <h4 class="oswald">The Brookshire Suites</h4>
-              <img src="img/brookshire.jpg" class="img-circle" />
-              <p class="lead">We reserved a large block of rooms at a hotel right downtown — The Brookshire Suites. When you call for a reservation, please tell them you are part of the Iverson/Bjornard wedding block. To make sure you get a room in our block and at our special rate please call them no later than September 12<sup>th</sup>.</p>
-              <p>The hotel is pretty small. If you stay there you&rsquo;ll pretty much only be with other wedding guests. It&rsquo;s a new(ish) hotel, owned by a small hotel company from DC, and it&rsquo;s trying to be &ldquo;gritty&rdquo; and &ldquo;baltimore-y.&rdquo; Breakfast is served on the top floor where you can look out over the harbor &mdash; it&rsquo;s a nice view. The inner harbor is close enough to walk to and it isn&rsquo;t too far from many of the other interesting things Baltimore has to offer either.</p>
-              <hr/>
-              <address>
-                <strong><i class="fa fa-map-marker"></i>&nbsp; The Brookshire Suites</strong><br/>
-                120 East Lombard Street, Baltimore, Maryland 21202<br/>
-                Toll Free: 855-345-5033 | Phone: 410-625-1300<br/>
-                Email: <a href="mailto:kdombrowski@brookshiresuites.com">kdombrowski@brookshiresuites.com</a><br/>
-                or, <a href="https://gc.synxis.com/rez.aspx?Hotel=28130&Chain=7505&arrive=10/9/2014&depart=10/12/2014&adult=1&child=0&group=141009IVER">Book Online w/our group rate</a>
-              </address>
-              <hr/>
-              <iframe id="bs-gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3088.0073433935036!2d-76.612427!3d39.288084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4303bc7ffd2921f7!2sBrookshire+Suites!5e0!3m2!1sen!2sus!4v1407467632685" width="400" height="300" frameborder="0" style="border:0"></iframe>
-            </div>
-            <div class="col-xs-12 col-md-6 gray transport">
-              <h4 class="oswald">Getting Into &amp; Around Bmore</h4>
-              <h4><i class="fa fa-plane fa-5x pms426"></i></h4>
-              <p class="lead">The closest airport is BWI &mdash; Baltimore Washington International. We recommend you fly into there. You can get to downtown Baltimore from BWI by the lightrail or by taxi fairly simply. You can also fly into Reagan or Dulles in DC if necessary, though they are both rather far from Baltimore and are not easy to travel to and from. </p>
-              <i class="fa fa-truck pms426 fa-3x"></i>
-              <p class="lead">For those of you coming from out of town, on Saturday we&rsquo;re renting some busses so that you won&rsquo;t have to find your own way to the party. The busses will pick you up right at the hotel, and then drop you back off there at the end of the night. <br/>Easy peasy.</p>
-              <p>Getting around Baltimore without a car can be tough, but here are your best bets from downtown:</p>
-              <ul class="text-left">
-                <li><i class="fa fa-car pms426"></i>&nbsp; <a href="http://www.zipcar.com/">Zipcar</a>: Zipcar offers a few locations around downtown. Using zipcar you can rent a car for an hour or for several days.</li>
-                <li><i class="fa fa-cab pms426"></i>&nbsp; <a href="https://www.uber.com/">Uber</a>: This car service/phone app lets you call a car from all over town and is usually pretty quick. They usually show up within 7&ndash;15 minutes.</li>
-                <li><i class="fa fa-cab pms426"></i>&nbsp; <a href="https://www.google.com/#q=baltimore+taxi+companies">Taxis</a>: From downtown it is pretty easy to grab a cab somewhere else &mdash; but it can be nearly impossible to find a cab back afterward. If you take a cab, make sure you get a cab company&#x27;s number so you can request pickup from where ever you end up. Unfortunately, Baltimore cabs are pretty unreliable, so we have typically come to rely on Uber the few times we ever need a lift somewhere.</li>
-              </ul>
+
+            <div class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <h2>Stay</h2>
+
+LODGING
+
+We've set up a block of rooms at the Aloft Hotel Milwaukee Downtown, which is 1/2 mile, straight shot to the wedding venue. You book directly from the link below or you can call the reservations number below and ask for the Nistico Wedding Rate. They will only hold 10 rooms at a time, but once they’re reserved, they’ll add more rooms to the block.To make sure you get a room in our block and at our special rate please book as soon as possible. The hotel will honor our wedding rate until November 12th.
+
+King/Queen -$109 per night
+Double - $119 per night
+
+ALOFT MILWAUKEE DOWNTOWN
+1230 Old World Third Street · Milwaukee, Wisconsin 53212
+Phone: (414) 226-0122 · Hotel Reservations: (877) 462-5638
+http://www.aloftmilwaukeedowntown.com/
+
+To Book:
+https://www.starwoodmeeting.com/StarGroupsWeb/res?id=1409153573&key=197D40E9
+
+
+There is another great hotel across the street from the venue, we are working on setting up a rate there too… and will have more info shortly on the rate and how to book. It is a lovely hotel just steps away from the wedding venue, but there isn't much else within direct proximity to it.
+
+The Brewhouse Inn & Suites
+1215 N 10th St, Milwaukee, WI 53205
+(414) 810-3350
+www.brewhousesuites.com
+
+If you’d like to look around for other options, there are several. For convenience, we’d recommend staying downtown…primarily east of highway 43 & south of Brady/Walnut Street. You can use www.maps.google.com to see where any particular hotel is situated.
+
             </div>
           </div>
         </div>
       </section><!--/stay-->
 
-      <section id="rsvp">
+      <section id="travel">
         <div class="container">
-          <h2><i class="fa fa-pencil"></i>&nbsp; RSVP</h2>
-
           <div class="row">
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 teal pad-top">
 
-              <!-- RSVP form from wufoo -->
-              <div id="wufoo-x1co1v1m1ug3igr">
-                Fill out my <a href="https://ookb.wufoo.com/forms/x1co1v1m1ug3igr">online form</a>.
-              </div>
-              <script type="text/javascript">var x1co1v1m1ug3igr;(function(d, t) {
-              var s = d.createElement(t), options = {
-              'userName':'ookb',
-              'formHash':'x1co1v1m1ug3igr',
-              'autoResize':true,
-              'height':'876',
-              'async':true,
-              'host':'wufoo.com',
-              'header':'show',
-              'ssl':true};
-              s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-              s.onload = s.onreadystatechange = function() {
-              var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-              try { x1co1v1m1ug3igr = new WufooForm();x1co1v1m1ug3igr.initialize(options);x1co1v1m1ug3igr.display(); } catch (e) {}};
-              var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-              })(document, 'script');</script>
-              <!-- end RSVP form from Wufoo -->
+            <div class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <h2>Travel</h2>
+              <h4 class="oswald">Getting Into &amp; Around Milwaukee</h4>
+              <p class="lead"><i class="fa fa-plane"></i>&nbsp;  The closest airport is MKE &mdash; General Mitchell International, located in the southeastern side of the city. Chicago airports are an option, but require a lot more coordination. Traffic and ongoing construction (if you drive) can create substantial delays.</p>
+              <p class="lead"><i class="fa fa-car"></i>&nbsp; If you choose not to rent a car from the MKE airport, a Taxi to downtown is the most convenient option. It will cost about $27 and take about 10 minutes.</p>
+              <p>Or a free shuttle bus runs between the airport and Milwaukee Airport Railroad Station; Amtrak provides nonstop service to downtown Milwaukee’s Intermodal Station. From there you can catch a taxi to your hotel.</p>
+              <p>If you’re feeling adventurous, Milwaukee County Transit bus #80 or MCTS Green Line express bus will cost $2.25 and take about 30 minutes. See schedules and information: http://www.ridemcts.com</p>
+              <hr/>
+              <p>Getting around Baltimore without a car can be tough, but here are your best bets from downtown:</p>
+              <ul class="text-left">
+                <li><i class="fa fa-cab "></i>&nbsp; Taxis: From downtown hotels it’s easy to grab a cab— but it can be tough to find a cab back afterward. If you take a cab, make sure you get a cab company's number so you can request pickup from where ever you end up.</li>
+                <li><i class="fa fa-cab"></i>&nbsp; <a href="https://www.uber.com/">Uber</a>: This car service/phone app lets you call a car from all over town and is usually pretty quick. They usually show up within 7&ndash;15 minutes.</li>
+              </ul>
 
             </div>
-          </div><!-- /row -->
+          </div>
+        </div>
+      </section><!--/travel-->
 
+
+      <section id="rsvp">
+        <div class="container">
+          <div class="row">
+
+            <div class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <h2>RSVP</h2>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 pad-top">
+
+                  <!-- RSVP form from wufoo -->
+                  <div id="wufoo-x1co1v1m1ug3igr">
+                    Fill out my <a href="https://ookb.wufoo.com/forms/x1co1v1m1ug3igr">online form</a>.
+                  </div>
+                  <script type="text/javascript">var x1co1v1m1ug3igr;(function(d, t) {
+                  var s = d.createElement(t), options = {
+                  'userName':'ookb',
+                  'formHash':'x1co1v1m1ug3igr',
+                  'autoResize':true,
+                  'height':'876',
+                  'async':true,
+                  'host':'wufoo.com',
+                  'header':'show',
+                  'ssl':true};
+                  s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+                  s.onload = s.onreadystatechange = function() {
+                  var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                  try { x1co1v1m1ug3igr = new WufooForm();x1co1v1m1ug3igr.initialize(options);x1co1v1m1ug3igr.display(); } catch (e) {}};
+                  var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                  })(document, 'script');</script>
+                  <!-- end RSVP form from Wufoo -->
+
+                </div>
+              </div><!-- /row -->
+
+            </div>
+          </div>
         </div><!--/container-->
       </section><!--/rsvp-->
 
       <section id="contact">
         <div class="container">
-          <h2><i class="fa fa-fax"></i>&nbsp; Contact</h2>
-          <p class="oswald">Contact us if you have any questions or concerns</p>
           <div class="row">
-            <p> Nancy: 507-301-9506 /// Kristian: 507-301-8402</p>
-          </div>
 
-          <div class="row">
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 teal pad-top">
-              <!-- wufoo contact form -->
-              <div id="wufoo-p1horf9v117oao1">
-              Fill out my <a href="https://ookb.wufoo.com/forms/p1horf9v117oao1">online form</a>.
+            <div class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <h2>Contact</h2>
+              <p class="oswald">Contact us if you have any questions or concerns</p>
+              <div class="row">
+                <p> Nancy: 507-301-9506 /// Kristian: 507-301-8402</p>
               </div>
-              <script type="text/javascript">var p1horf9v117oao1;(function(d, t) {
-              var s = d.createElement(t), options = {
-              'userName':'ookb',
-              'formHash':'p1horf9v117oao1',
-              'autoResize':true,
-              'height':'597',
-              'async':true,
-              'host':'wufoo.com',
-              'header':'show',
-              'ssl':true};
-              s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-              s.onload = s.onreadystatechange = function() {
-              var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-              try { p1horf9v117oao1 = new WufooForm();p1horf9v117oao1.initialize(options);p1horf9v117oao1.display(); } catch (e) {}};
-              var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-              })(document, 'script');</script>
-              <!-- end contact form from Wufoo -->
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 pad-top">
+                  <!-- wufoo contact form -->
+                  <div id="wufoo-p1horf9v117oao1">
+                  Fill out my <a href="https://ookb.wufoo.com/forms/p1horf9v117oao1">online form</a>.
+                  </div>
+                  <script type="text/javascript">var p1horf9v117oao1;(function(d, t) {
+                  var s = d.createElement(t), options = {
+                  'userName':'ookb',
+                  'formHash':'p1horf9v117oao1',
+                  'autoResize':true,
+                  'height':'597',
+                  'async':true,
+                  'host':'wufoo.com',
+                  'header':'show',
+                  'ssl':true};
+                  s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+                  s.onload = s.onreadystatechange = function() {
+                  var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                  try { p1horf9v117oao1 = new WufooForm();p1horf9v117oao1.initialize(options);p1horf9v117oao1.display(); } catch (e) {}};
+                  var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                  })(document, 'script');</script>
+                  <!-- end contact form from Wufoo -->
+
+                </div>
+              </div><!-- /row -->
 
             </div>
-          </div><!-- /row -->
-
+          </div>
         </div>
       </section> <!--/contact -->
 
@@ -206,24 +252,25 @@
       <!-- REGISTRY!!!! -->
       <section id="registry">
         <div class="container">
-          <h2><i class="fa fa-gift"></i>&nbsp; Registry</h2>
           <div class="row">
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 pink pad-top">
-              <p class="lead add-top">Please know that there is no need for a gift. </p>
-              <p class="lead">All that we want is to share a lovely wedding weekend with our family and friends. It is your presence we are after, not your presents.</p>
-              <p class="add-top">If you would like to give a gift and are looking for inspiration, we have setup a gift registry at myregistry.com</p>
-              <p><a class="btn btn-default" href="http://www.myregistry.com/wedding-registry/Kristian-Bjornard-Nancy-Iverson-Baltimore-MD/714817">MyRegistry.com</a></p>
-              <p class="add-top col-md-10 col-md-offset-1">Or, there are two organizations you could honor us by making a donation to: Donate Life Maryland or Future Harvest. A dear friend of ours — Amy Sherald — recently had a life saving heart transplant. Donate Life does work getting people to become organ donors with the hopes of saving a lot of other lives. Future Harvest funds Nancy's current farm apprenticeship, and they work in the greater Maryland area to make agriculture better for farmers, consumers, and the planet.</p>
-              <ul class="list-inline add-bottom">
-                <li><a href="http://www.donatelifemaryland.org/support/"><img src="/img/donate-life.jpg" title="Donate Life Maryland"></a></li>
-                <li><a href="http://www.futureharvestcasa.org/index.php?option=com_content&view=article&id=59:make-a-donation&catid=34:about&Itemid=139"><img src="/img/futureharvest.jpg" title="Donate Life Maryland"></a></li>
-              </ul>
+
+            <div class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <h2> Registry</h2>
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 pad-top">
+                  <p class="lead add-top">Please know that there is no need for a gift. </p>
+                  <p class="lead">All that we want is to share a lovely wedding weekend with our family and friends. It is your presence we are after, not your presents.</p>
+                  <p class="add-top">If you would like to give a gift and are looking for inspiration, we have setup a gift registry at myregistry.com</p>
+                  <p><a class="btn btn-default btn-block" href="http://www.myregistry.com/wedding-registry/Kristian-Bjornard-Nancy-Iverson-Baltimore-MD/714817">MyRegistry.com</a></p>
+                </div>
+              </div>
+
             </div>
           </div><!-- /row -->
         </div> <!-- /container -->
       </section> <!--/registry -->
 
-    </div><!-- end wrapper -->
+    </main><!-- end wrapper -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -232,9 +279,11 @@
     <script src="js/gplusn.js"></script>
     <script src="js/snow.js"></script> <!-- found here http://jqsnow.sourceforge.net/ -->
 
+<!--
     <script>
       $(document).snow({ SnowImage: "img/snow.png", ZIndexStart: "200" });
     </script>
+-->
 
   </body>
 </html>
