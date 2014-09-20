@@ -8,7 +8,7 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/gplusn.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,49 +17,340 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+
+  <body id="home" data-spy="scroll" data-target=".navbar-example">
     <!-- this just hangs out to fill the screen wrap the viewport with a cool border -->
-    <div id="cool-border"></div>
-
-    <!-- this will be the "cover" of the card, it'll slide up out of the way -->
-    <header>
-      <h1>Save the Date</h1>
-      <h2><date>December 13, 2014</date></h2>
-    </header>
-
-    <main>
-      <div class="container">
-        <div class="row">
-          <div class="solid col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-
-            <h2>A Brew City Wedding</h2>
-            <h1>Gina Nistico &  Nicholas Iverson</h1>
-            <h3><date>December 13, 2014</date></h3>
-
-            <div class="lead">
-              <p>Best Place at the Historic Pabst Brewery</p>
-              <p>Milwaukee, WI 53233</p>
-            </div>
-
-            <p>Formal invitations and further information to follow</p>
-
-          </div>
-        </div>
-
-      </div>
-    </main>
-
+    <div id="cool-border" class="hidden-xs"></div>
     <img id="sled" src="img/sledders.png" />
 
+    <!-- ***********************-->
+    <!-- ***********************-->
+    <!-- HEADER -->
+    <!-- ***********************-->
+    <!-- ***********************-->
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#home">Gina &amp; Nick</a></li>
+              <li><a href="#details">Details</a></li>
+              <li><a href="#stay">Lodging</a></li>
+              <li><a href="#travel">Travel</a></li>
+<!--               <li><a href="#rsvp">RSVP</a></li> -->
+<!--               <li><a href="#contact">Contact</a></li> -->
+<!--               <li><a href="#registry">Registry</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ***********************-->
+    <!-- ***********************-->
+    <!-- Main Chunks -->
+    <!-- ***********************-->
+    <!-- ***********************-->
+    <main class="wrapper">
+
+      <!-- ***********************-->
+      <!-- Intro -->
+      <!-- ***********************-->
+      <!-- this will be the "cover" of the card, it'll slide up out of the way -->
+      <section id="intro">
+        <h1 class="oldstandard">Gina + Nick&rsquo;s</h1>
+        <h2 class="oswald">Winter Wedding Weekend</h2>
+        <h3 class="oldstandard add-top">December 13<sup>th</sup> 2014</h3>
+      </section>
+
+      <!-- ***********************-->
+      <!-- Details -->
+      <!-- ***********************-->
+      <section id="details">
+        <div class="container">
+          <div class="row">
+
+            <div class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+
+              <h2>A Brew City Wedding</h2>
+              <h1>December 13<sup>th</sup>, 2014</h1>
+
+              <address>
+                <h3>Best Place at the Historic Pabst Brewery</h3>
+                901 W Juneau Ave, <br/>
+                Milwaukee, WI 53233
+              </address>
+
+              <p class="add-top lead">Wedding Vows, Delicious food, drink, and <br/>a generally festive time to be had by all.</p>
+
+            </div>
+          </div>
+        </div>
+      </section><!--/details-->
+
+      <!-- ***********************-->
+      <!-- Stay -->
+      <!-- ***********************-->
+      <section id="stay">
+        <div class="container">
+          <div class="row">
+
+            <div class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <h2>Lodging</h2>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                  <p class="lead">We've set up a block of rooms at two different hotels.</p>
+                  <hr class="fat"/>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                  <p>The first, is the Aloft Hotel Milwaukee Downtown, which is a &half; mile, straight shot to the wedding venue. You can call the reservations number below and ask for the Nistico Wedding Rate. They will only hold 10 rooms at a time, but once they’re reserved, they’ll add more rooms to the block. To make sure you get a room in our block and at our special rate please book as soon as possible. <br/>The hotel will honor our wedding rate until November 12th.</p>
+
+                  <ul class="text-left">
+                    <li>King/Queen -$109 per night</li>
+                    <li>Double - $119 per night</li>
+                  </ul>
+
+                  <address>
+                    <h3>ALoft Milwaukee Downtown</h3>
+                    <p>1230 Old World Third Street · Milwaukee, Wisconsin 53212<br/>
+                      Phone: (414) 226-0122 · Hotel Reservations: (877) 462-5638<br/>
+                      <a href="http://www.aloftmilwaukeedowntown.com/">www.aloftmilwaukeedowntown.com</a>
+                    </p>
+                  </address>
+
+                  <a class="btn btn-default btn-block uppercase" href="https://www.starwoodmeeting.com/StarGroupsWeb/res?id=1409153573&key=197D40E9">Book Now</a>
+
+                  <hr class="fat"/>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                  <p>The other option is a  great hotel across the street from the venue. It is a lovely place just steps away from the wedding/reception venue, making it extremely convenient. They are all suites and the hotel serves a complimentary, deluxe continental breakfast. However there is not much else within direct proximity of it, so it is slightly less convenient for running around town. To book a room online, go to the website and use the group code: NISTICO. Or you can call the hotel directly and ask for the Nistico/Iverson wedding rate. <br/>The rate will be honored through November 12th.</p>
+
+                  <ul class="text-left">
+                    <li>Studio Queen Suite - $119 per night</li>
+                    <li>One bedroom King suite (with queen size sofa bed) - $159 per night</li>
+                  </ul>
+
+
+                  <address>
+                    <h3>The Brewhouse Inn & Suites</h3>
+                    <p>1215 N 10th St, Milwaukee, WI 53205<br/>
+                      (414) 810-3350<br/>
+                      <a href="http://www.brewhousesuites.com">www.brewhousesuites.com</a>
+                    </p>
+                  </address>
+                  <hr class="fat"/>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                  <p>If you’d like to look around for other options, there are several. For convenience, we’d recommend staying downtown…primarily east of highway 43 & south of Brady/Walnut Street. You can use <a href="http://maps.google.com/">Google Maps</a> to see where any particular hotel is situated.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--/stay-->
+
+      <!-- ***********************-->
+      <!-- Travel -->
+      <!-- ***********************-->
+      <section id="travel">
+        <div class="container">
+          <div class="row">
+
+            <div class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <h2>Travel</h2>
+              <h4>Getting Into &amp; Around Milwaukee</h4>
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                  <p class="lead">The closest airport is MKE &mdash; General Mitchell International, located in the southeastern side of the city. Chicago airports are an option, but require a lot more coordination. Traffic and ongoing construction (if you drive) can create substantial delays.</p>
+                  <p>If you choose not to rent a car from the MKE airport, a Taxi to downtown is the most convenient option. It will cost about $27 and take about 10 minutes.</p>
+                  <p>Or a free shuttle bus runs between the airport and Milwaukee Airport Railroad Station; Amtrak provides nonstop service to downtown Milwaukee’s Intermodal Station. From there you can catch a taxi to your hotel.</p>
+                  <p>If you’re feeling adventurous, Milwaukee County Transit bus #80 or MCTS Green Line express bus will cost $2.25 and take about 30 minutes. <a href="http://www.ridemcts.com">See schedules and information</a></p>
+                  <hr class="fat"/>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                  <p>Getting around Milwaukee without a car is a little less convenient, but not difficult. If you choose not to rent a car, here are your best bets to getting around downtown:</p>
+                  <ul class="text-left">
+                    <li>Taxis: From downtown hotels it’s easy to grab a cab— but it can be tough to find a cab back afterward. If you take a cab, make sure you get a cab company's number so you can request pickup from where ever you end up.</li>
+                    <li><a href="https://www.uber.com/">Uber</a>: This car service/phone app lets you call a car from all over town and is usually pretty quick. They usually show up within 7&ndash;15 minutes.</li>
+                  </ul>
+                  <hr class="fat"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--/travel-->
+
+      <!-- ***********************-->
+      <!-- RSVP -->
+      <!-- ***********************-->
+<!--
+      <section id="rsvp">
+        <div class="container">
+          <div class="row">
+
+            <div class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <h2>RSVP</h2>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 pad-top">
+
+                  <div id="wufoo-x1co1v1m1ug3igr">
+                    Fill out my <a href="https://ookb.wufoo.com/forms/x1co1v1m1ug3igr">online form</a>.
+                  </div>
+                  <script type="text/javascript">var x1co1v1m1ug3igr;(function(d, t) {
+                  var s = d.createElement(t), options = {
+                  'userName':'ookb',
+                  'formHash':'x1co1v1m1ug3igr',
+                  'autoResize':true,
+                  'height':'876',
+                  'async':true,
+                  'host':'wufoo.com',
+                  'header':'show',
+                  'ssl':true};
+                  s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+                  s.onload = s.onreadystatechange = function() {
+                  var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                  try { x1co1v1m1ug3igr = new WufooForm();x1co1v1m1ug3igr.initialize(options);x1co1v1m1ug3igr.display(); } catch (e) {}};
+                  var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                  })(document, 'script');</script>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+-->
+
+      <!-- ***********************-->
+      <!-- Contact -->
+      <!-- ***********************-->
+<!--
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+
+            <div class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <h2>Contact</h2>
+              <p>Contact us if you have any questions or concerns</p>
+              <div class="row">
+                <p> Gina: /// Nick: </p>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 pad-top">
+
+                  <div id="wufoo-p1horf9v117oao1">
+                  Fill out my <a href="https://ookb.wufoo.com/forms/p1horf9v117oao1">online form</a>.
+                  </div>
+                  <script type="text/javascript">var p1horf9v117oao1;(function(d, t) {
+                  var s = d.createElement(t), options = {
+                  'userName':'ookb',
+                  'formHash':'p1horf9v117oao1',
+                  'autoResize':true,
+                  'height':'597',
+                  'async':true,
+                  'host':'wufoo.com',
+                  'header':'show',
+                  'ssl':true};
+                  s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+                  s.onload = s.onreadystatechange = function() {
+                  var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                  try { p1horf9v117oao1 = new WufooForm();p1horf9v117oao1.initialize(options);p1horf9v117oao1.display(); } catch (e) {}};
+                  var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                  })(document, 'script');</script>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+-->
+
+      <!-- ***********************-->
+      <!-- Registry -->
+      <!-- ***********************-->
+<!--
+      <section id="registry">
+        <div class="container">
+          <div class="row">
+
+            <div class="card col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <h2> Registry</h2>
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 pad-top">
+                  <p class="lead add-top">Please know that there is no need for a gift. </p>
+                  <p class="lead">All that we want is to share a lovely wedding weekend with our family and friends. It is your presence we are after, not your presents.</p>
+                  <p class="add-top">If you would like to give a gift and are looking for inspiration, we have setup a gift registry at myregistry.com</p>
+                  <p><a class="btn btn-default btn-block" href="http://www.myregistry.com/wedding-registry/Kristian-Bjornard-Nancy-Iverson-Baltimore-MD/714817">MyRegistry.com</a></p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+-->
+
+    </main><!-- end wrapper -->
+
+    <!-- ***********************-->
+    <!-- ***********************-->
+    <!-- JS -->
+    <!-- ***********************-->
+    <!-- ***********************-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="js/gplusn.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/snow.js"></script> <!-- found here http://jqsnow.sourceforge.net/ -->
 
+<!--
     <script>
       $(document).snow({ SnowImage: "img/snow.png", ZIndexStart: "200" });
+    </script>
+-->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-54983216-1', 'auto');
+      ga('send', 'pageview');
+
     </script>
 
   </body>
